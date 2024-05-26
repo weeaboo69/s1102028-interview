@@ -37,14 +37,14 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
-import sneakersData from '../sneakers.json';
+import sneakers from '../sneakers.json';
 
 const route = useRoute();
 const sneaker = ref({});
 
 onMounted(() => {
   const sneakerId = route.params.id;
-  sneaker.value = sneakersData.find(s => s.id == sneakerId);
+  sneaker.value = sneakers.find(s => s.id == sneakerId);
 });
 </script>
 

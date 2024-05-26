@@ -22,7 +22,7 @@
       <img class="w-20 h-20 hover:cursor-pointer" @click="changeImage('left')" src="../assets/image/left.png">
     </div>
     <div class="flex-shrink content-center px-4 py-2 m-2 hover:cursor-pointer" @click="GoToSneaker">
-      <img :src="currentImage">
+      <img :src="Image">
     </div>
   <div class="flex-shrink content-center px-4 py-2 m-2">
     <img class="w-20 h-20 hover:cursor-pointer" @click="changeImage('right')" src="../assets/image/right.png">
@@ -40,25 +40,25 @@
   import sneakersData from '../sneakers.json';
 
   const sneakers = ref([]);
-  const currentIndex = ref(0);
+  const Sneaker_Now = ref(0);
   const router = useRouter();
 
   sneakers.value = sneakersData;
 
-  const currentImage = ref(sneakers.value[currentIndex.value].image);
-  const currentImageId = ref(sneakers.value[currentIndex.value].id);
+  const Image = ref(sneakers.value[Sneaker_Now.value].image);
+  const Image_Id = ref(sneakers.value[Sneaker_Now.value].id);
 
   const changeImage = direction => {
     if (direction === 'left') {
-      currentIndex.value = (currentIndex.value - 1 + sneakers.value.length) % sneakers.value.length;
+      Sneaker_Now.value = (Sneaker_Now.value - 1 + sneakers.value.length) % sneakers.value.length;
     } else if (direction === 'right') {
-      currentIndex.value = (currentIndex.value + 1) % sneakers.value.length;
+      Sneaker_Now.value = (Sneaker_Now.value + 1) % sneakers.value.length;
     }
-    currentImage.value = sneakers.value[currentIndex.value].image;
-    currentImageId.value = sneakers.value[currentIndex.value].id;
+    Image.value = sneakers.value[Sneaker_Now.value].image;
+    Image_Id.value = sneakers.value[Sneaker_Now.value].id;
   };
   const GoToSneaker = () => {
-    router.push({ name: 'Sneaker', params: { id: currentImageId.value } });
+    router.push({ name: 'Sneaker', params: { id: Image_Id.value } });
   };
 </script>
 
