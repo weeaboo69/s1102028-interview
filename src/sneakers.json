@@ -1,0 +1,29 @@
+[
+    {
+        "id": 0,
+        "title":"球鞋1",
+        "brand":"NIKE",
+        "name": "WMNS DUNK LOW RETRO WHITE BLACK",
+        "image": "/src/assets/image/0.png",
+        "description": "\t 此為女款，請對照US W尺寸表。版型偏小，建議大半號至一號購買。 DUNK系列鞋款早期稱霸了籃球鞋市場，成為許多人喜愛著用的實戰鞋款，加入低筒的設計後，Dunk也成為休閒穿搭必備的鞋履之一，採用高品質皮革，以簡約的黑白呈現，結合泡棉中底以及耐磨的橡膠外底\n\n 型號\n\t DD1503-101\n\n 上市日期\n\t 2021-01-04\n\n",
+        "price": "NT$ 2,529+"
+    },
+    {
+        "id": 1,
+        "title":"球鞋2",
+        "brand":"NIKE",
+        "name": "DUNK LOW CHAMPIONSHIP COURT PURPLE",
+        "image": "./src/assets/image/1.png",
+        "description": "\t 版型偏小，建議大半號至一號購買。DUNK由Peter Moore於1980年設計推出，並在1985年成為籃球鞋中的首選鞋款，1985年夏季NIKE開啟了大學配色計畫「Be True To Your School」，選用DUNK打造該系列，同時成為籃球鞋史上第一組鮮豔配色的系列。大學籃球原版設計再度回歸，採用俐落材質外層和經典風格色塊。現代製鞋技術將設計舒適性帶入 21 世紀；球場紫和白色的搶眼組合，展現 80 年代球隊奪冠希望的風格，為配色增添經典氣息\n\n 型號\n\t DD1391-104\n\n 上市日期\n\t 2022-01-11\n\n",
+        "price": "NT$ 2,259+"
+    },
+    {
+        "id": 2,
+        "title":"球鞋3",
+        "brand":"AIR JORDAN",
+        "name": "AIR JORDAN 1 LOW TRAVIS SCOTT FRAGMENT MILITARY BLUE",
+        "image": "./src/assets/image/2.png",
+        "description": "\t 由饒舌歌手Travis Scott與Hiroshi Fujiwara創立的 Fragment Design，共同攜手與Nike 合作，以經典的Air Jordan 1 加上反轉的Swoosh，有別於先前發售的混合面料，本次採用全皮革，並選用Fragment Design知名的黑藍配色，後跟處則可以看見雙品牌的Logo壓印\n\n 型號\n\t DM7866-140\n\n 上市日期\n\t 2021-08-13\n\n",
+        "price": "NT$ 44,999+"
+    }
+]
