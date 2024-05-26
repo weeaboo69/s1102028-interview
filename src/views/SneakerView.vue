@@ -45,7 +45,7 @@ const sneaker = ref({});
 onMounted(() => {
   const sneakerId = route.params.id;
   sneaker.value = sneakers.find(s => s.id == sneakerId);
-});
+}); 
 </script>
 
 <style scoped>
