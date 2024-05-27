@@ -43,7 +43,7 @@
   const Sneaker_Now = ref(0);
   const router = useRouter();
 
-  sneakers.value = sneakersData;
+  sneakers.value = sneakersData; 
 
   const Image = ref(sneakers.value[Sneaker_Now.value].image);
   const Image_Id = ref(sneakers.value[Sneaker_Now.value].id);
